@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_turquoise"
+    tools:context="com.example.ufuk.remainingusage.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo_tt" />
+
+    <TextView
+        android:id="@+id/lbl_giris"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="HOSGELDINIZ , KALAN KULLANIM HAKLARINIZI GÖRMEK İÇİN TELEFON NUMARANIZI VE ŞİFRENİZİ GİRİNİZ;"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_telno"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginStart="66dp"
+        android:layout_below="@+id/lbl_giris"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/btn_giris"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Giriş Yap"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txt_telno"
+        android:layout_marginEnd="38dp" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:layout_above="@+id/btn_giris"
+        android:layout_alignStart="@+id/txt_telno" />
+
+</RelativeLayout>
